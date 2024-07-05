@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+body {
+    font-family: "Uncial Antiqua", system-ui;
+
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('static/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.background {
+    background-image: url('static/images/background.jpg');
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Adjust the opacity value to 0.7 for 70% dimming */
+}
+
+.hero button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #424751;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero button:hover {
+    background-color: #424751;
+    filter: brightness(80%);
+}
+
+.hero button:focus {
+    outline: none;
+    /* Add additional styles for focus state if needed */
+}
+
+.hero button:active {
+    transform: translateY(1px);
+    /* Add additional styles for active state if needed */
+}
+
+.BIG {
+    font-size: 80px;
+}
+.KINDA-BIG {
+    font-size: 60PX;
+}
+

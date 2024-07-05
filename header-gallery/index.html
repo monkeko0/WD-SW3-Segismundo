@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+        body {
+            font-family: "Uncial Antiqua", system-ui;
+            background-color: white;
+            color: black;
+        }
+
+        #nasa-header {
+            width: 100%;
+            height: 80px;
+            background-color: #061E2F;
+            display: flex;
+            flex-direction: row;
+            padding: 0 50px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nasad-header {
+            width: 100%;
+            height: 80px;
+            background-color: #061E2F;
+            display: flex;
+            flex-direction: row;
+            padding: 0 50px;
+            box-sizing: border-box;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            font-weight: 600;
+            scale: 120%;
+            font-family: "Uncial Antiqua", system-ui;
+            color: white;
+            text-decoration: none;
+        }
+
+        #right-nav-links {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        #left-nav-links {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .grow-anim {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grow-anim:hover {
+            transform: scale(1.1); /* Grow by 10% */
+        }
+
+        .container {
+        position: relative; /* Ensure relative positioning for absolute child */
+        display: inline-block; /* Ensure container fits content */
+    }
+
+        .container a {
+            position: absolute; /* Position relative to parent */
+            top: 10%; /* Position below the parent */
+            left: 150px; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            color: white; /* Text color */
+            padding: 5px; /* Padding around text */
+            border-radius: 5px; /* Rounded corners */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
+        }
+
+        .container:hover img {
+            opacity: 0;
+        }
+
+        .container:hover a {
+            opacity: 1; /* Make visible on hover */
+        }
+
+        .glide {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.5s ease; /* Transition property */
+        }
+        
+        .glide:hover {
+            transform: translateX(200px); /* Move element on hover */
+        }
+
+        .spinner {
+        width: 100px;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .spinner:hover {
+        animation: spin 2s linear infinite; /* Apply spin animation on hover */
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg); /* Start at 0 degrees rotation */
+        }
+        100% {
+            transform: rotate(360deg); /* End at 360 degrees rotation */
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div style="color: black; font-size: x-large;">
+        <center>
+            <p>Static Header Designs</p>
+            <a style="color: black; font-size: large;" href="/index.html" >HOME</a>
+        </center>
+    </div>
+
+    <p>Design 1 Composition of Logo & 5 Navigations</p>
+    <div id="nasa-header">
+        <div id="left-nav-links">
+            <img src="/static/svg/House_Stark.svg" width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a href="">Work</a>
+            <a href="">Services</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 2 Composition of Logo 5 Navigations & Call to action</p>
+
+    <div id="nasa-header" style="background-color: #C52F21;">
+        <div id="left-nav-links">
+            <p></p>
+            <img src="/static/svg/House_Lannister.svg" width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a href="">Work</a>
+            <a href="">Services</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <button style="
+            height: 50px;
+            font-family: 'Uncial Antiqua', system-ui;
+            ">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 3 Composition of Logo 5 Navigations & Icon</p>
+
+    <div id="nasa-header" style="background-color: #9CA7FA; ">
+        <div id="left-nav-links">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <img src="/static/svg/House_Arryn.svg" ca width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a style="color: #1343A0;" href="">Work</a>
+            <a style="color: #1343A0;" href="">Services</a>
+            <a style="color: #1343A0;" href="">About</a>
+            <a style="color: #1343A0;" href="">Blog</a>
+            <a style="color: #1343A0;" href="">Contact</a>
+            <a style="color: #1343A0;" href=""><img src="/static/svg/user-alt-1-svgrepo-com.svg" alt="" width="30" height="30.58"></a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 4 Composition of Logo & 4 Navigations w/ grow effect</p>
+
+    <div id="nasad-header">
+        <div id="left-nav-links">
+            <a href="">Work</a>
+            <a href="">Services</a>
+        </div>
+        <img src="/static/svg/House_Hightower.svg" width="70" height="70.58" alt="">
+        <div id="right-nav-links">
+            <a href="">About</a>
+            <a href="">Blog</a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 5 Composition of Logo & 4 Icons</p>
+
+    <div id="nasa-header">
+        <div id="left-nav-links">
+            <img src="/static/svg/House_Martell.svg" width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a href="">Work</a>
+            <a href="">Services</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <center><h1>Animated Header Designs</h1></center>
+    <p>Design 1 Composition of Logo & 5 Navigations Grow effect</p>
+    <div id="nasa-header">
+        <div id="left-nav-links">
+            <img class="grow-anim" src="/static/svg/House_Stark.svg" width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a class="grow-anim" href="">Work</a>
+            <a class="grow-anim" href="">Services</a>
+            <a class="grow-anim" href="">About</a>
+            <a class="grow-anim" href="">Blog</a>
+            <a class="grow-anim" href="">Contact</a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 2 Composition of Logo 5 Navigations & Call to action W/ fade effecrt</p>
+
+    <div id="nasa-header" style="background-color: #C52F21;">
+        <div id="left-nav-links">
+            <p></p>
+            <div class="container">
+                <img src="/static/svg/House_Lannister.svg" width="70" height="70.58" alt="">
+                <a>House Lannister</a>
+            </div>
+        </div>
+        <div id="right-nav-links">
+            <a href="">Work</a>
+            <a href="">Services</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <button style="
+            height: 50px;
+            font-family: 'Uncial Antiqua', system-ui;
+            ">
+                Buy Now
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 3 Composition of Logo 5 Navigations & Icon w/ glide effect</p>
+
+    <div id="nasa-header" style="background-color: #9CA7FA; ">
+        <div id="left-nav-links">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <img class="glide" src="/static/svg/House_Arryn.svg" ca width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a style="color: #1343A0;" href="">Work</a>
+            <a style="color: #1343A0;" href="">Services</a>
+            <a style="color: #1343A0;" href="">About</a>
+            <a style="color: #1343A0;" href="">Blog</a>
+            <a style="color: #1343A0;" href="">Contact</a>
+            <a style="color: #1343A0;" href=""><img src="/static/svg/user-alt-1-svgrepo-com.svg" alt="" width="30" height="30.58"></a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 4 Composition of Logo & 4 Navigations</p>
+
+    <div id="nasad-header">
+        <div id="left-nav-links">
+            <a class="grow-anim" href="">Work</a>
+            <a class="grow-anim" href="">Services</a>
+        </div>
+        <img class="grow-anim" src="/static/svg/House_Hightower.svg" width="70" height="70.58" alt="">
+        <div id="right-nav-links">
+            <a class="grow-anim" href="">About</a>
+            <a class="grow-anim" href="">Blog</a>
+        </div>
+    </div>
+
+    <br>
+    <p>Design 5 Composition of Logo & 4 Icons w/ spin</p>
+
+    <div id="nasa-header">
+        <div  id="left-nav-links">
+            <img class="spinner" src="/static/svg/House_Martell.svg" width="70" height="70.58" alt="">
+        </div>
+        <div id="right-nav-links">
+            <a class="spinner" href="">Work</a>
+            <a class="spinner" href="">Services</a>
+            <a class="spinner" href="">About</a>
+            <a class="spinner" href="">Blog</a>
+        </div>
+    </div>
+</body>
+</html>
