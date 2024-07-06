@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+body {
+    font-family: "Uncial Antiqua", system-ui;
+}
+
+.footer {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background-color: #ABABAB;
+    padding-inline: 20px;
+}
