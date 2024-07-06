@@ -116,4 +116,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Imgaes | image icon for website. | https://gameofthrones.fandom.com/wiki/House_of_the_Dragon |
+| Images | image icon for website. | https://gameofthrones.fandom.com/wiki/House_of_the_Dragon |
