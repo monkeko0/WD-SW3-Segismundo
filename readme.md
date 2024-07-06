@@ -59,10 +59,10 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project - website 
-- Whats the purpose - for our seatwork 3
-- What are key components -  House of the Dragon inspired, header and Footers, static and animated designs
-- What technology used and how it is used? - html and css
+- What is the project - website.
+- Whats the purpose - for our seatwork 3.
+- What are key components -  House of the Dragon inspired, header and footers, static and animated designs.
+- What technology used and how it is used? - html and css.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
